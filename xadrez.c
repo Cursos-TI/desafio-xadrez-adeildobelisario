@@ -45,7 +45,7 @@ int main() {
     // Implementação de Movimentação da Rainha
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
 
-    printf("\nMovimento da Rainha: 8 casas para a esquerda):\n");
+    printf("\nMovimento da Rainha: 8 casas para a esquerda \n");
 
     int D = 1;  // Variável de controle
     // Teste com Do-While
@@ -54,10 +54,27 @@ int main() {
         D++;  // Incremento
     } while (D <= MovimentoDama);  // Continua executando "enquanto" D for menor ou igual a 8
 
-
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
+
+    printf("\nMovimento do Cavalo: duas casas para baixo e uma para a esquerda \n");
+
+    const int MovVertical = 2; // definindo os 2 primeiros movimentos
+    const int MovHorizontal = 1; //definindo o último movimento do salto
+
+    for (int i = 1; i <= MovVertical; i++)
+    {
+        printf("(Cavalo) %d casas: Baixo\n", i);
+    }
+    int j = 1;
+    while (j <= MovHorizontal)
+    {
+        printf("(Cavalo) %d casa: Esquerda\n", j);
+        j++;
+    }
+    
+        
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
